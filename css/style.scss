@@ -1,0 +1,2362 @@
+$color: #ff7d3b;
+$color1: #451cc0;
+$color2: #fff;
+$color3: #fdfdfd;
+body {
+    background-color: #faf8fb;
+}
+header {
+    .navbar {
+        background-color: #faf8fb;
+        position: fixed;
+        z-index: 8;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        .collapse .navbar-nav .nav-item .nav-link {
+            padding-right: 25px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .nav-btn .btn {
+            background-color: $color;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px 20px;
+            border-radius: 6px;
+        }
+        .nav-btn .btn:hover {
+            background-color: $color1;
+        }
+    }
+    
+    .hero-section {
+        .data {
+            position: relative;
+            padding-top: 250px;
+            h1 {
+                padding: 20px 0px;
+            }
+            p {
+                padding-bottom: 20px;
+            }
+            .input-group {
+                width: 100%;
+                .input-icon {
+                    input {
+                        width: 200%;
+                        height: 60px;
+                        border: 0px;
+                    }
+                }
+            }
+            button {
+                background-color: $color1;
+                position: absolute;
+                left: 260px;
+                padding: 10px 40px;
+                margin-top: 7px;
+                color: white;
+                border-radius: 0px;
+            }
+            button:hover {
+                background-color: $color;
+            }
+        }
+        img {
+            height: 700px;
+        }
+    }
+}
+
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    header {
+        overflow: hidden;
+        .navbar {
+            padding-top: 20px;
+            .collapse .navbar-nav .nav-item .nav-link:hover {
+                background-color: $color;
+                color: white;
+            }
+            .nav-btn .btn {
+                background-color: $color1;
+                width: 100%;
+            }
+            .nav-btn .btn:hover {
+                background-color: $color1;
+            }
+        }
+        .hero-section {
+            padding-bottom: 30px;
+            padding-top: 100px;
+            .data {
+                padding-top: 60px;
+                text-align: center;
+                .input-group {
+                    padding-left: 50px;
+                    .input-icon {
+                        input {
+                            width: 170%;
+                        }
+                    }
+                }
+                button {
+                    background-color: $color1;
+                    position: absolute;
+                    left: 240px;
+                    padding: 10px 40px;
+                    margin-top: 7px;
+                    color: white;
+                }
+            }
+            img {
+                margin-top: 50px;
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    header {
+        overflow: hidden;
+        .navbar {
+            padding-top: 20px;
+            .collapse .navbar-nav .nav-item .nav-link:hover {
+                background-color: $color;
+                color: white;
+            }
+            .nav-btn .btn {
+                background-color: $color1;
+                width: 100%;
+            }
+            .nav-btn .btn:hover {
+                background-color: $color1;
+            }
+        }
+        .hero-section {
+            padding-bottom: 30px;
+            .data {
+                padding-top: 20px;
+                text-align: center;
+                .input-group {
+                    padding-left: 50px;
+                    .input-icon {
+                        input {
+                            width: 200%;
+                            height: 60px;
+                            border: 0px;
+                        }
+                    }
+                }
+                button {
+                    background-color: $color1;
+                    position: absolute;
+                    left: 320px;
+                    padding: 10px 30px;
+                }
+            }
+            img {
+                padding-top: 70px;
+                width: 100%;
+                height: 600px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        overflow: hidden;
+        .navbar {
+            padding-top: 20px;
+            .collapse .navbar-nav .nav-item .nav-link:hover {
+                background-color: $color;
+                color: white;
+            }
+            .nav-btn .btn {
+                background-color: $color1;
+                width: 100%;
+            }
+            .nav-btn .btn:hover {
+                background-color: $color1;
+            }
+        }
+        .hero-section {
+            padding-top: 60px;
+            .data {
+                text-align: start;
+                position: relative;
+                padding-top: 50px;
+                padding-left: 50px;
+                .input-group {
+                    padding-left: 0px;
+                    width: 50%;
+                    .input-icon {
+                        input {
+                            width: 180%;
+                        }
+                    }
+                }
+                button {
+                    background-color: $color1;
+                    position: absolute;
+                    left: 200px;
+                    padding: 10px 30px;
+                }
+            }
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    header {
+        position: relative;
+        .navbar {
+            padding-top: 20px;
+            .collapse .navbar-nav .nav-item .nav-link:hover {
+                background-color: #faf8fb;
+                color: black;
+            }
+            .collapse .navbar-nav .nav-item .nav-link:hover {
+                text-decoration: underline;
+                text-decoration-color: $color;
+            }
+            .nav-btn .btn {
+                background-color: $color;
+                width: 100%;
+            }
+            .nav-btn .btn:hover {
+                background-color: $color1;
+            }
+        }
+
+        .hero-section {
+            padding-top: 0px;
+            .data {
+                text-align: start;
+                width: 80%;
+                position: relative;
+                padding-top: 200px;
+                padding-left: 120px;
+                h1 {
+                    padding: 20px 0px;
+                }
+                p {
+                    padding-bottom: 20px;
+                }
+                .input-group {
+                    width: 100%;
+                    padding-left: 0px;
+                    .input-icon {
+                        input {
+                            width: 200%;
+                        }
+                    }
+                }
+                button {
+                    background-color: $color;
+                    position: absolute;
+                    left: 250px;
+                    padding: 10px 40px;
+                }
+                button:hover {
+                    background-color: $color1;
+                }
+            }
+            img {
+                height: 700px;
+                padding-right: 80px;
+            }
+        }
+    }
+}
+
+//Features ################################3
+.Features {
+    background-color: $color3;
+    padding-bottom: 50px;
+    p {
+        font-size: 18px;
+        text-align: center;
+        color: $color;
+    }
+    h2 {
+        text-align: center;
+    }
+    .data-icon {
+        padding-top: 50px;
+        .icon-features-1 {
+            border-style: solid;
+            border-color: #ebeeee;
+            background-color: $color2;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            .img {
+                background-color: $color;
+                width: 15%;
+                padding: 20px 0px;
+                padding-left: 25px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+                border-right-color: #f2f1f4;
+            }
+            h3 {
+                text-align: center;
+                padding-bottom: 10px;
+                color: black;
+            }
+            p {
+                text-align: center;
+                color: black;
+            }
+        }
+        .icon-features-1:hover {
+            background-color: $color1;
+            h3 {
+                color: $color2;
+            }
+            p {
+                color: $color2;
+            }
+        }
+        .icon-features-2 {
+            background-color: #451cc0;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            .img {
+                background-color: $color;
+                width: 15%;
+                padding: 20px 0px;
+                padding-left: 20px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+            }
+            h3 {
+                text-align: center;
+                padding-bottom: 10px;
+                color: $color2;
+            }
+            p {
+                text-align: center;
+                color: $color2;
+            }
+        }
+        .icon-features-3 {
+            border-style: solid;
+            border-color: #ebeeee;
+            background-color: $color2;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            .img {
+                background-color: $color;
+                width: 15%;
+                padding: 20px 0px;
+                padding-left: 20px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+            }
+            h3 {
+                text-align: center;
+                padding-bottom: 10px;
+                color: black;
+            }
+            p {
+                text-align: center;
+                color: black;
+            }
+        }
+        .icon-features-3:hover {
+            background-color: $color1;
+            h3 {
+                color: $color2;
+            }
+            p {
+                color: $color2;
+            }
+        }
+    }
+}
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Features {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        .data-icon {
+            .icon-features-1 {
+                .img {
+                    margin: 0px 30px 30px 180px;
+                }
+            }
+            .icon-features-2 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .img {
+                    margin: 0px 30px 30px 180px;
+                }
+            }
+            .icon-features-3 {
+                .img {
+                    margin: 0px 30px 30px 180px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Features {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        .data-icon {
+            .icon-features-1 {
+                .img {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+            .icon-features-2 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .img {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+            .icon-features-3 {
+                .img {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Features {
+        padding-bottom: 50px;
+        .data-icon {
+            padding-top: 50px;
+            padding-left: 180px;
+            .icon-features-1 {
+                width: 70%;
+            }
+            .icon-features-2 {
+                width: 70%;
+            }
+            .icon-features-3 {
+                width: 70%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Features {
+        padding-bottom: 80px;
+        .data-icon {
+            padding-top: 50px;
+            padding-left: 0px;
+            .icon-features-1 {
+                width: 100%;
+                .img {
+                    width: 30%;
+                    padding-left: 31px;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+            .icon-features-2 {
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .img {
+                    width: 30%;
+                    padding-left: 31px;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+            .icon-features-3 {
+                width: 100%;
+                .img {
+                    width: 30%;
+                    padding-left: 31px;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .Features {
+        padding-bottom: 80px;
+        .data-icon {
+            padding-top: 50px;
+            padding-left: 0px;
+            .icon-features-1 {
+                width: 100%;
+                .img {
+                    width: 20%;
+                    padding-left: 30px;
+                    margin: 0px 30px 30px 160px;
+                }
+            }
+            .icon-features-2 {
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .img {
+                    width: 20%;
+                    padding-left: 30px;
+                    margin: 0px 30px 30px 160px;
+                }
+            }
+            .icon-features-3 {
+                width: 100%;
+                .img {
+                    width: 20%;
+                    padding-left: 30px;
+                    margin: 0px 30px 30px 160px;
+                }
+            }
+        }
+    }
+}
+// about ##############################
+.about {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .image {
+        img {
+            height: 650px;
+            width: 100%;
+        }
+    }
+    .data {
+        width: 90%;
+        padding-left: 80px;
+        padding-top: 180px;
+        span {
+            color: $color;
+            font-size: 18px;
+        }
+        h2 {
+            padding: 20px 0px;
+        }
+        p {
+            color: #92698d;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+        button {
+            background-color: $color;
+            color: white;
+            font-size: 20px;
+            padding: 10px 40px;
+            border-radius: 6px;
+            border: 0px;
+        }
+        button:hover {
+            background-color: $color1;
+        }
+    }
+}
+// EXSmall devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .about {
+        overflow: hidden;
+        text-align: center;
+        .image {
+            img {
+                height: 600px;
+            }
+        }
+        .data {
+            padding-top: 70px;
+            width: 80%;
+            padding-left: 50px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .about {
+        text-align: center;
+        .image {
+            img {
+                height: 550px;
+            }
+        }
+        .data {
+            padding-top: 70px;
+            width: 80%;
+            padding-left: 0px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .about {
+        overflow: hidden;
+        text-align: center;
+        .image {
+            img {
+                height: 400px;
+                width: 100%;
+            }
+        }
+        .data {
+            padding-top: 50px;
+            width: 120%;
+            padding-left: 0px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .about {
+        text-align: start;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        .image {
+            img {
+                height: 650px;
+                width: 100%;
+            }
+        }
+        .data {
+            padding-top: 180px;
+            width: 85%;
+            padding-left: 80px;
+        }
+    }
+}
+// works####################################
+.works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color3;
+    p {
+        text-align: center;
+        color: $color;
+    }
+    h2 {
+        text-align: center;
+    }
+    .item {
+        padding-top: 50px;
+        .Install {
+            text-align: center;
+            h2 {
+                background-color: #fff2eb;
+                width: 20%;
+                padding: 20px 0px;
+                padding-left: 0px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+                color: $color;
+                font-size: 40px;
+            }
+            h3 {
+                padding-bottom: 10px;
+            }
+            p {
+                color: #92698d;
+                font-size: 18px;
+            }
+        }
+        .Setup {
+            text-align: center;
+            h2 {
+                background-color: $color;
+                width: 20%;
+                padding: 20px 0px;
+                padding-left: 0px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+                color: $color2;
+                font-size: 40px;
+            }
+            h3 {
+                padding-bottom: 10px;
+            }
+            p {
+                color: #92698d;
+                font-size: 18px;
+            }
+        }
+        .Enjoy {
+            text-align: center;
+            h2 {
+                background-color: #fff2eb;
+                width: 20%;
+                padding: 20px 0px;
+                padding-left: 0px;
+                margin: 0px 30px 30px 170px;
+                border-radius: 5px;
+                color: $color;
+                font-size: 40px;
+            }
+            h3 {
+                padding-bottom: 10px;
+            }
+            p {
+                color: #92698d;
+                font-size: 18px;
+            }
+        }
+    }
+}
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .works {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $color3;
+        .item {
+            padding-top: 50px;
+            .Install {
+                h2 {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+            .Setup {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                h2 {
+                    background-color: $color;
+                    width: 20%;
+                    padding: 20px 0px;
+                    padding-left: 0px;
+                    margin: 0px 30px 30px 200px;
+                    border-radius: 5px;
+                    color: $color2;
+                    font-size: 40px;
+                }
+                h3 {
+                    padding-bottom: 10px;
+                }
+                p {
+                    color: #92698d;
+                    font-size: 18px;
+                }
+            }
+            .Enjoy {
+                h2 {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .works {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $color3;
+        .item {
+            padding-top: 50px;
+            .Install {
+                text-align: center;
+                h2 {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+            .Setup {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                h2 {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+            .Enjoy {
+                text-align: center;
+                h2 {
+                    margin: 0px 30px 30px 200px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .works {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $color3;
+        .item {
+            padding-top: 50px;
+            .Install {
+                text-align: center;
+                h2 {
+                    width: 15%;
+                    margin: 0px 30px 30px 300px;
+                }
+            }
+            .Setup {
+                text-align: center;
+                h2 {
+                    width: 15%;
+                    margin: 0px 30px 30px 300px;
+                }
+            }
+            .Enjoy {
+                text-align: center;
+                h2 {
+                    width: 15%;
+                    margin: 0px 30px 30px 300px;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .works {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        background-color: $color3;
+        .item {
+            padding-top: 70px;
+            .Install {
+                text-align: center;
+                h2 {
+                    width: 25%;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+            .Setup {
+                text-align: center;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                h2 {
+                    width: 25%;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+            .Enjoy {
+                text-align: center;
+                h2 {
+                    width: 25%;
+                    margin: 0px 30px 30px 110px;
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .works {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        background-color: $color3;
+        .item {
+            padding-top: 70px;
+            .Install {
+                text-align: center;
+                h2 {
+                    width: 20%;
+                    margin: 0px 30px 30px 170px;
+                }
+            }
+            .Setup {
+                text-align: center;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                h2 {
+                    width: 20%;
+                    margin: 0px 30px 30px 170px;
+                }
+            }
+            .Enjoy {
+                text-align: center;
+                h2 {
+                    width: 20%;
+                    margin: 0px 30px 30px 170px;
+                }
+            }
+        }
+    }
+}
+
+//Video######################################
+
+.Video {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $color3;
+    .data {
+        text-align: center;
+        p {
+            color: $color;
+        }
+        h2 {
+            padding-bottom: 50px;
+        }
+    }
+    .images {
+        position: relative;
+        .img1 {
+            position: absolute;
+            top: -60px;
+            right: 80px;
+            z-index: 0;
+        }
+        .img2 {
+            position: absolute;
+            padding-left: 150px;
+            z-index: 1;
+            height: 600px;
+            width: 90%;
+        }
+        .img3 {
+            position: absolute;
+            left: 50px;
+            top: 490px;
+            z-index: 2;
+        }
+        li {
+            position: absolute;
+            top: 280px;
+            left: 700px;
+            z-index: 2;
+            list-style: none;
+            i {
+                background-color: $color2;
+                border-color: $color;
+                border-radius: 50%;
+                color: #ff7d3b;
+                font-size: 80px;
+                cursor: pointer;
+                box-shadow: 0 0 0 20px opacify($color: rgb(255, 125, 70), $amount: 0.1);
+                animation: icons 2s infinite linear forwards , rays 2s 2s infinite linear;
+            }
+            }
+        }
+        
+        @keyframes icons {
+            0%{
+                box-shadow:none;
+            }
+        }
+        @keyframes rays {
+            0%{
+                box-shadow: 0 0 0 20px opacify($color: rgb(255, 125, 70), $amount: 0.1);
+               
+            }
+        }
+    }
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Video {
+        background-color: $color3;
+        height: 900px;
+        .images {
+            position: relative;
+            .img1 {
+                position: absolute;
+                top: -60px;
+                right: 0px;
+                z-index: 0;
+                width: 30%;
+            }
+            .img2 {
+                position: absolute;
+                padding-left: 50px;
+                z-index: 1;
+                height: 500px;
+                width: 90%;
+            }
+            .img3 {
+                position: absolute;
+                left: -30px;
+                top: 400px;
+                z-index: 2;
+                width: 30%;
+            }
+            li {
+                position: absolute;
+                top: 210px;
+                left: 210px;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Video {
+        background-color: $color3;
+        height: 900px;
+        .images {
+            position: relative;
+            .img1 {
+                position: absolute;
+                top: -60px;
+                right: 0px;
+                z-index: 0;
+                width: 20%;
+            }
+            .img2 {
+                position: absolute;
+                right: 20px;
+                left: 20px;
+                padding-left: 20px;
+                padding-right: 0px;
+                z-index: 1;
+                height: 500px;
+                width: 90%;
+            }
+            .img3 {
+                position: absolute;
+                left: -20px;
+                top: 420px;
+                z-index: 2;
+                width: 20%;
+            }
+            li {
+                position: absolute;
+                top: 220px;
+                left: 320px;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Video {
+        background-color: $color3;
+        height: 900px;
+        .images {
+            position: relative;
+            .img1 {
+                position: absolute;
+                top: -60px;
+                right: 0px;
+                z-index: 0;
+                width: 20%;
+            }
+            .img2 {
+                position: absolute;
+                right: 20px;
+                left: 30px;
+                padding-left: 20px;
+                padding-right: 0px;
+                z-index: 1;
+                height: 500px;
+                width: 90%;
+            }
+            .img3 {
+                position: absolute;
+                left: -30px;
+                top: 400px;
+                z-index: 2;
+                width: 20%;
+            }
+            li {
+                position: absolute;
+                top: 230px;
+                left: 420px;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Video {
+        padding-bottom: 50px;
+        background-color: $color3;
+        height: 1000px;
+        .images {
+            position: relative;
+            .img1 {
+                position: absolute;
+                top: -50px;
+                right: 20px;
+                z-index: 0;
+                width: 10%;
+            }
+            .img2 {
+                position: absolute;
+                right: 20px;
+                left: 50px;
+                padding-left: 20px;
+                padding-right: 0px;
+                z-index: 1;
+                height: 600px;
+                width: 90%;
+            }
+            .img3 {
+                position: absolute;
+                left: 10px;
+                top: 510px;
+                z-index: 2;
+                width: 10%;
+            }
+            li {
+                position: absolute;
+                top: 250px;
+                left: 540px;
+                z-index: 4;
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .Video {
+        padding-bottom: 50px;
+        background-color: $color3;
+        height: 1000px;
+        .images {
+            position: relative;
+            .img1 {
+                position: absolute;
+                top: -60px;
+                right: 0px;
+                z-index: 0;
+                width: 10%;
+            }
+            .img2 {
+                position: absolute;
+                right: 20px;
+                left: 80px;
+                padding-left: 20px;
+                padding-right: 0px;
+                z-index: 1;
+                height: 600px;
+                width: 90%;
+            }
+            .img3 {
+                position: absolute;
+                left: 10px;
+                top: 480px;
+                z-index: 2;
+                width: 10%;
+            }
+            li {
+                position: absolute;
+                top: 280px;
+                left: 690px;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+// pricing$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+.Pricing {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .p-hed {
+        text-align: center;
+        color: $color;
+    }
+    .h2-hed {
+        text-align: center;
+    }
+    .Pricing-data {
+        padding-top: 50px;
+        .Pricing1 {
+            background-color: $color2;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #ebeeee;
+            .item {
+                padding-top: 70px;
+                padding-left: 60px;
+                padding-bottom: 60px;
+                h2 {
+                    font-size: 50px;
+                    display: inline;
+                    padding-left: 30px;
+                    padding-bottom: 50px;
+                    color: $color1;
+                }
+                span {
+                    color: $color1;
+                    display: inline;
+                }
+                h3 {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    padding-bottom: 30px;
+                    color: #737b9a;
+                }
+                li {
+                    list-style: none;
+                    padding-top: 10px;
+                    i {
+                        padding-right: 15px;
+                        color: $color;
+                    }
+                }
+                button {
+                    color: $color1;
+                    font-size: 20px;
+                    margin-top: 50px;
+                    padding: 10px 90px;
+                    border-radius: 6px;
+                    background-color: $color2;
+                }
+                button:hover {
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+        .Pricing2 {
+            background-color: $color1;
+            border-radius: 10px;
+
+            .item {
+                color: $color2;
+                padding-top: 70px;
+                padding-left: 60px;
+                padding-bottom: 60px;
+                h2 {
+                    font-size: 50px;
+                    display: inline;
+                    padding-left: 30px;
+                    padding-bottom: 50px;
+                }
+                span {
+                    display: inline;
+                }
+                h3 {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    padding-bottom: 30px;
+                }
+                li {
+                    list-style: none;
+                    padding-top: 10px;
+                    i {
+                        padding-right: 15px;
+                        color: $color;
+                    }
+                }
+                button {
+                    color: $color2;
+                    background-color: $color;
+                    font-size: 20px;
+                    margin-top: 50px;
+                    padding: 10px 90px;
+                    border-radius: 6px;
+                }
+                button:hover {
+                    background-color: $color2;
+                    color: $color;
+                }
+            }
+        }
+        .Pricing3 {
+            background-color: $color2;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #ebeeee;
+            .item {
+                padding-top: 70px;
+                padding-left: 60px;
+                padding-bottom: 60px;
+                h2 {
+                    font-size: 50px;
+                    display: inline;
+                    padding-left: 30px;
+                    padding-bottom: 50px;
+                    color: $color1;
+                }
+                span {
+                    color: $color1;
+                    display: inline;
+                }
+                h3 {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    padding-bottom: 30px;
+                    color: #737b9a;
+                }
+                li {
+                    list-style: none;
+                    padding-top: 10px;
+                    i {
+                        padding-right: 15px;
+                        color: $color;
+                    }
+                }
+                button {
+                    color: $color1;
+                    font-size: 20px;
+                    margin-top: 50px;
+                    padding: 10px 90px;
+                    border-radius: 6px;
+                    background-color: $color2;
+                }
+                button:hover {
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Pricing {
+        .Pricing-data {
+            padding-left: 60px;
+            .Pricing1 {
+                width: 80%;
+                .item {
+                    padding-left: 50px;
+                    button {
+                        margin-top: 50px;
+                        padding: 10px 60px;
+                    }
+                }
+            }
+            .Pricing2 {
+                width: 80%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .item {
+                    padding-left: 50px;
+
+                    button {
+                        margin-top: 50px;
+                        padding: 10px 60px;
+                    }
+                }
+            }
+            .Pricing3 {
+                width: 80%;
+                .item {
+                    padding-left: 50px;
+                    button {
+                        margin-top: 50px;
+                        padding: 10px 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Pricing {
+        padding-top: 50px;
+        .Pricing-data {
+            padding-left: 130px;
+            .Pricing1 {
+                width: 75%;
+                .item {
+                    padding-left: 50px;
+                }
+            }
+            .Pricing2 {
+                width: 75%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .item {
+                    padding-left: 50px;
+                }
+            }
+            .Pricing3 {
+                width: 75%;
+                .item {
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Pricing {
+        padding-top: 50px;
+        .Pricing-data {
+            padding-left: 250px;
+            .Pricing1 {
+                width: 60%;
+                .item {
+                    padding-left: 90px;
+                    button {
+                        padding: 10px 40px;
+                    }
+                }
+            }
+            .Pricing2 {
+                width: 60%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .item {
+                    padding-left: 90px;
+                    button {
+                        padding: 10px 40px;
+                    }
+                }
+            }
+            .Pricing3 {
+                width: 60%;
+                .item {
+                    padding-left: 90px;
+                    button {
+                        padding: 10px 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Pricing {
+        padding-bottom: 80px;
+        padding-top: 90px;
+        .Pricing-data {
+            padding-left: 0px;
+            .Pricing1 {
+                width: 100%;
+                .item {
+                    padding-left: 30px;
+                    button {
+                        padding: 10px 60px;
+                    }
+                }
+            }
+            .Pricing2 {
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .item {
+                    padding-left: 30px;
+                    button {
+                        padding: 10px 60px;
+                    }
+                }
+            }
+            .Pricing3 {
+                width: 100%;
+                .item {
+                    padding-left: 30px;
+                    button {
+                        padding: 10px 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .Pricing {
+        padding-bottom: 80px;
+        padding-top: 90px;
+        .Pricing-data {
+            padding-left: 0px;
+            .Pricing1 {
+                width: 100%;
+                .item {
+                    padding-left: 70px;
+                    button {
+                        padding: 10px 90px;
+                    }
+                }
+            }
+            .Pricing2 {
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .item {
+                    padding-left: 70px;
+                    button {
+                        padding: 10px 90px;
+                    }
+                }
+            }
+            .Pricing3 {
+                width: 100%;
+                .item {
+                    padding-left: 70px;
+                    button {
+                        padding: 10px 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+//blog read $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4
+
+.Blog-read {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background-color: $color2;
+    .p-blog {
+        text-align: center;
+        color: $color;
+        font-weight: bold;
+    }
+    h2 {
+        text-align: center;
+    }
+    .Blog-data {
+        padding-top: 60px;
+        .blog-1 {
+            img {
+                width: 100%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                cursor: pointer;
+                // padding-bottom: 20px;
+            }
+            span {
+                font-size: 15px;
+                padding-right: 20px;
+                color: #737b9a;
+            }
+            h3 {
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 20px 0px;
+                font-size: 20px;
+            }
+            h3:hover {
+                text-decoration: none;
+                color: $color;
+            }
+            p {
+                padding-bottom: 10px;
+                color: #737b9a;
+            }
+            h6 {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            h6:hover {
+                text-decoration: none;
+                color: $color;
+            }
+        }
+        .blog-2 {
+            img {
+                width: 100%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                cursor: pointer;
+                // padding-bottom: 20px;
+            }
+            span {
+                font-size: 15px;
+                padding-right: 20px;
+                color: #737b9a;
+            }
+            h3 {
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 20px 0px;
+                font-size: 20px;
+            }
+            h3:hover {
+                text-decoration: none;
+                color: $color;
+            }
+            p {
+                padding-bottom: 10px;
+                color: #737b9a;
+            }
+            h6 {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            h6:hover {
+                text-decoration: none;
+                color: $color;
+            }
+        }
+        .blog-3 {
+            img {
+                width: 100%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                cursor: pointer;
+                // padding-bottom: 20px;
+            }
+            span {
+                font-size: 15px;
+                padding-right: 20px;
+                color: #737b9a;
+            }
+            h3 {
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 20px 0px;
+                font-size: 20px;
+            }
+            h3:hover {
+                text-decoration: none;
+                color: $color;
+            }
+            p {
+                padding-bottom: 10px;
+                color: #737b9a;
+            }
+            h6 {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            h6:hover {
+                text-decoration: none;
+                color: $color;
+            }
+        }
+    }
+}
+
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Blog-read {
+        .Blog-data {
+            .blog-2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Blog-read {
+        .Blog-data {
+            width: 90%;
+            padding-left: 90px;
+            .blog-2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Blog-read {
+        .Blog-data {
+            width: 80%;
+            padding-left: 200px;
+            padding-top: 60px;
+            .blog-2 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Blog-read {
+        .Blog-data {
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 60px;
+            .blog-2 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+// Blog ##########################################
+.Blog-free {
+    background-color: $color2;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    position: relative;
+    .Blog-data {
+        border-radius: 15px;
+        margin-left: 80px;
+        background-color: $color1;
+        overflow: hidden;
+        width: 90%;
+    }
+    .data {
+        position: absolute;
+        left: 500px;
+        top: 130px;
+        width: 34%;
+        text-align: center;
+        h2 {
+            color: $color2;
+            padding-bottom: 10px;
+        }
+        p {
+            color: $color2;
+        }
+        button {
+            margin-top: 20px;
+            margin-right: 20px;
+            padding: 10px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            i {
+                padding-right: 10px;
+                font-size: 30px;
+            }
+        }
+        button:hover {
+            background-color: #cfc5ed;
+        }
+    }
+}
+
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Blog-free {
+        position: relative;
+        .Blog-data {
+            margin-left: 20px;
+            overflow: hidden;
+            width: 90%;
+        }
+        .data {
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            width: 90%;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Blog-free {
+        position: relative;
+        .Blog-data {
+            margin-left: 20px;
+            overflow: hidden;
+            width: 90%;
+        }
+        .data {
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            width: 90%;
+        }
+        .but-1 {
+            display: block;
+            margin-left: 232px;
+        }
+        button {
+            display: block;
+            margin-left: 220px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Blog-free {
+        position: relative;
+        .Blog-data {
+            margin-left: 100px;
+            overflow: hidden;
+            width: 80%;
+        }
+        .data {
+            position: absolute;
+            left: 50px;
+            top: 150px;
+            width: 90%;
+        }
+        .but-1 {
+            display: inline;
+            margin-left: 0px;
+        }
+        button {
+            display: inline;
+            margin-left: 0px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Blog-free {
+        position: relative;
+        .Blog-data {
+            margin-left: 60px;
+            overflow: hidden;
+            width: 90%;
+        }
+        .data {
+            position: absolute;
+            left: 330px;
+            top: 130px;
+            width: 50%;
+            text-align: center;
+        }
+        .but-1 {
+            display: inline;
+            margin-left: 0px;
+        }
+        button {
+            display: inline;
+            margin-left: 0px;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .Blog-free {
+        position: relative;
+        .Blog-data {
+            margin-left: 80px;
+            overflow: hidden;
+            width: 90%;
+        }
+        .data {
+            position: absolute;
+            left: 450px;
+            top: 130px;
+            width: 40%;
+            text-align: center;
+        }
+        .but-1 {
+            display: inline;
+            margin-left: 0px;
+        }
+        button {
+            display: inline;
+            margin-left: 0px;
+        }
+    }
+}
+// #########################################
+.Blog-input {
+    background-color: $color2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    p {
+        text-align: center;
+        color: $color;
+        font-weight: bold;
+    }
+    h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+    .data-inner {
+        width: 80%;
+        padding-left: 400px;
+        padding-top: 30px;
+        .input {
+            width: 90%;
+            height: 50px;
+            margin-top: 20px;
+            border-color: #ebeeee;
+            border-radius: 7px;
+            border-style: solid;
+        }
+        .input-group {
+            margin-top: 20px;
+            width: 95%;
+            height: 100px;
+            border-color: #ebeeee;
+            border-radius: 7px;
+            border-style: solid;
+        }
+        button {
+            background-color: $color1;
+            color: white;
+            font-size: 20px;
+            padding: 20px 50px;
+            border-radius: 6px;
+            border: 0px;
+            margin-top: 50px;
+            margin-left: 260px;
+        }
+        button:hover {
+            background-color: $color;
+        }
+    }
+}
+
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .Blog-input {
+        overflow: hidden;
+        .data-inner {
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 30px;
+            .input {
+                display: inline;
+                width: 90%;
+                height: 50px;
+                margin-top: 20px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            .input-group {
+                margin-top: 20px;
+                width: 95%;
+                height: 100px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            button {
+                padding: 20px 50px;
+                margin-left: 130px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .Blog-input {
+        overflow: hidden;
+        .data-inner {
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 30px;
+            .input {
+                display: inline;
+                width: 90%;
+                height: 50px;
+                margin-top: 20px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            .input-group {
+                margin-top: 20px;
+                width: 95%;
+                height: 100px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            button {
+                padding: 20px 50px;
+                margin-left: 130px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .Blog-input {
+        overflow: hidden;
+        .data-inner {
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 30px;
+            .input {
+                display: inline;
+                width: 90%;
+                height: 50px;
+                margin-top: 20px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            .input-group {
+                margin-top: 20px;
+                width: 95%;
+                height: 100px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            button {
+                padding: 20px 50px;
+                margin-left: 230px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .Blog-input {
+        overflow: hidden;
+        .data-inner {
+            width: 80%;
+            padding-left: 330px;
+            padding-top: 30px;
+            .input {
+                display: inline;
+                width: 90%;
+                height: 50px;
+                margin-top: 20px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            .input-group {
+                margin-top: 20px;
+                width: 95%;
+                height: 100px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            button {
+                padding: 20px 50px;
+                margin-left: 150px;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .Blog-input {
+        overflow: hidden;
+        .data-inner {
+            width: 80%;
+            padding-left: 330px;
+            padding-top: 30px;
+            .input {
+                display: inline;
+                width: 90%;
+                height: 50px;
+                margin-top: 20px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            .input-group {
+                margin-top: 20px;
+                width: 95%;
+                height: 100px;
+                border-color: #ebeeee;
+                border-radius: 7px;
+            }
+            button {
+                padding: 20px 50px;
+                margin-left: 280px;
+            }
+        }
+    }
+}
+
+//footer############################################
+
+footer {
+    background-color: $color1;
+    .footer-item {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        .fot-1 {
+            width: 100%;
+            h3 {
+                color: $color2;
+                padding-bottom: 5px;
+            }
+            p {
+                color: #dcd4f4;
+                padding: 15px 0px;
+            }
+            span {
+                padding-top: 5px;
+                color: $color2;
+                display: inline;
+                padding-right: 30px;
+            }
+            li {
+                display: inline;
+                i {
+                    padding-left: 5px;
+                    color: #dcd4f4;
+                    cursor: pointer;
+                }
+            }
+        }
+        .fot-2 {
+            width: 80%;
+            padding-left: 30px;
+            h3 {
+                color: $color2;
+                padding-bottom: 10px;
+            }
+            li {
+                color: #dcd4f4;
+                list-style: none;
+                padding-top: 10px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            li:hover {
+                text-decoration: none;
+            }
+        }
+        .fot-3 {
+            width: 80%;
+            padding-left: 10px;
+            h3 {
+                color: $color2;
+                padding-bottom: 10px;
+            }
+            li {
+                color: #dcd4f4;
+                list-style: none;
+                padding-top: 10px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            li:hover {
+                text-decoration: none;
+            }
+        }
+        .fot-4 {
+            width: 110%;
+            h3 {
+                color: $color2;
+                padding-bottom: 5px;
+            }
+            p {
+                color: #dcd4f4;
+                padding: 10px 0px;
+            }
+            .input-group {
+                .input-icon {
+                    input {
+                        height: 50px;
+                    }
+                }
+                .btn {
+                    background-color: $color;
+                    padding: 0px 20px;
+                    i {
+                        font-size: 20px;
+                        color: $color2;
+                    }
+                }
+            }
+        }
+        .p-fot {
+            text-align: center;
+            color: $color2;
+            padding-top: 70px;
+        }
+    }
+}
+// EX-Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    footer {
+        overflow: hidden;
+        .footer-item {
+            position: relative;
+            .fot-1 {
+                display: block;
+                width: 100%;
+                padding-bottom: 90px;
+            }
+            .fot-2 {
+                width: 80%;
+                position: absolute;
+                left: 10px;
+                top: 300px;
+            }
+            .fot-3 {
+                position: absolute;
+                left: 250px;
+                top: 300px;
+                width: 80%;
+                display: inline;
+            }
+            .fot-4 {
+                padding-top: 300px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    footer {
+        overflow: hidden;
+        .footer-item {
+            position: relative;
+            .fot-1 {
+                display: block;
+                width: 70%;
+                position: absolute;
+                left: 100px;
+                right: 50px;
+            }
+            .fot-2 {
+                width: 40%;
+                position: absolute;
+                left: 70px;
+                top: 300px;
+            }
+            .fot-3 {
+                position: absolute;
+                left: 380px;
+                top: 300px;
+                width: 80%;
+                display: inline;
+            }
+            .fot-4 {
+                padding-top: 550px;
+                width: 70%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    footer {
+        overflow: hidden;
+        .footer-item {
+            position: relative;
+            .fot-1 {
+                display: block;
+                width: 40%;
+                padding-bottom: 80px;
+            }
+            .fot-2 {
+                width: 80%;
+                position: absolute;
+                left: 470px;
+                top: 50px;
+            }
+            .fot-3 {
+                position: absolute;
+                left: 100px;
+                top: 350px;
+                width: 40%;
+                display: inline;
+            }
+            .fot-4 {
+                padding-left: 10px;
+                padding-top: 300px;
+                width: 100%;
+            }
+            .p-fot {
+                text-align: center;
+                color: $color2;
+                padding-top: 200px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    footer {
+        overflow: hidden;
+        .footer-item {
+            position: relative;
+            .fot-1 {
+                display: block;
+                width: 20%;
+                padding-bottom: 80px;
+            }
+            .fot-2 {
+                width: 20%;
+                position: absolute;
+                left: 370px;
+                top: 50px;
+            }
+            .fot-3 {
+                position: absolute;
+                left: 630px;
+                top: 50px;
+                width: 15%;
+                display: inline;
+            }
+            .fot-4 {
+                padding-left: 0px;
+                padding-top: 0px;
+                width: 120%;
+            }
+            .p-fot {
+                text-align: center;
+                color: $color2;
+                padding-top: 200px;
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    footer {
+        overflow: hidden;
+        .footer-item {
+            position: relative;
+            .fot-1 {
+                display: block;
+                width: 20%;
+                padding-bottom: 80px;
+            }
+            .fot-2 {
+                width: 20%;
+                position: absolute;
+                left: 500px;
+                top: 50px;
+            }
+            .fot-3 {
+                position: absolute;
+                left: 830px;
+                top: 50px;
+                width: 15%;
+                display: inline;
+            }
+            .fot-4 {
+                padding-left: 0px;
+                padding-top: 0px;
+                width: 110%;
+            }
+            .p-fot {
+                text-align: center;
+                color: $color2;
+                padding-top: 200px;
+            }
+        }
+    }
+}
+
+//  blog#######################################3
